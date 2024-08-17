@@ -1,30 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;900&family=Martian+Mono:wght@100..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
+body{
+    background-color: black;
+}
 .main{
-    background-image: url(./assests/Images/bacground-Image.jpg);
-    height: 80vh;
+    background-image: url(assets/Images/bacground-Image.jpg);
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: max(1200px, 100vw);
     position: relative;
+    font-family: 'Martel Sans', sans-serif;
 }
 
 .main .box {
-    height: 60vh;
+    height: 100vh;
     width: 100%;
     position: absolute;
     top: 0;
-    opacity: 0.44;
+    opacity: 0.6;
     background-color: black;
 }
 
 nav{
-    height: 62px;
-    width: 80vw;
+    height: 100px;
+    max-width: 75vw;
     margin: auto;
     display: flex;
     align-items: center;
@@ -32,18 +39,105 @@ nav{
 }
 
 nav img {
-    width: 114px;
+    width: 148px;
     position: relative;
     z-index: 1;
 }
 
+nav button {
+    position: relative;
+    z-index: 1;
+    color: white;
+    background-color: #e50914;
+}
+
+.btn-language{
+    height: 38px;
+    width: 76px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0); /* White with 30% opacity */
+    border: 1.5px solid rgba(255, 255, 255, 0.5); /* Semi-transparent border */
+    color: rgba(255, 255, 255, 1); /* Fully opaque text */
+    margin-right: 10px;
+}
+
+.btn-signin{
+    height: 38px;
+    width: 76px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #e50914;
+    border-radius: 5px;
+    border: none;
+}
+
+/* ================================================ */
+/* hero section */
 .hero-section {
-    border: 2px solid red;
-    height: 100%;
+    height: calc(100% - 100px);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 25px;
     color: white;
+    transform: translateY(8%);
     position: relative;
+}
+
+.hero-section> :first-child{
+    font-size: 42px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.hero-section> :nth-child(2){
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero-section> :nth-child(3){
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero-membership{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 6px;
+}
+
+.hero-membership input{
+    width: 364px;
+    height: 56px;
+    padding-left: 15px;
+    filter: opacity(80%);
+    background-color: rgba(33, 32, 32, 0.3); /* White with 30% opacity */
+    border: 1.5px solid rgba(255, 255, 255, 0.5); /* Semi-transparent border */
+    color: rgba(255, 255, 255, 1); /* Fully opaque text */
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+
+.hero-membership button {
+    width: 213px;
+    height: 56px;
+    background-color: #e50914;   
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.seprator-line{
+    height: 8px;
+    background-color: rgb(40, 39, 39);
 }
