@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Netflix</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Netflix Pakistan - Watch TV Shows Online, Watch Movies Online</title>
 </head>
 <body>
     <div class="main">
         <nav>
-            <span><img src="assests/Images/logo.svg" alt=""></span>
-            <div>
-                <button>English</button>
-                <button>Sign in</button>
+            <span><img src="assets/Images/logo.svg" alt=""></span>
+            <div class="buttons">
+                <button class="btn-language">English</button>
+                <button class="btn-signin">Sign in</button>
             </div>
         </nav>
-        <!-- for black layer of opacity -->
+        <!-- for black layer of opacity on nav and hero section-->
         <div class="box"></div>
 
         <!-- hero section -->
@@ -23,7 +25,20 @@
             <span>Unlimited movies, TV shows, and more</span>
             <span>Watch anywhere. Cancel anytime.</span>
             <span>Ready to watch? Enter your email to create or restart your membership.</span>            
+            <div class="hero-membership">
+               <input type="text" placeholder="Email Address">
+               <button>Get Started</button>
+            </div>
          </div>
     </div>
+
+    <!-- The seprator line -->
+     <div class="seprator-line"></div>
+
+
+
+
+
+     <div class="di" style="height: 100vh;"></div>
 </body>
 </html>
