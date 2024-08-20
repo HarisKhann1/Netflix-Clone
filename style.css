@@ -7,6 +7,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.container{
+    max-width: 75%;
+    margin-inline: auto;
+}
+
 body{
     background-color: black;
 }
@@ -87,19 +92,19 @@ nav button {
 }
 
 .hero-section> :first-child{
-    font-size: 42px;
+    font-size: 2.6rem;
     font-weight: 900;
     text-align: center;
 }
 
 .hero-section> :nth-child(2){
-    font-size: 30px;
+    font-size: 1.5rem;
     font-weight: 400;
     text-align: center;
 }
 
 .hero-section> :nth-child(3){
-    font-size: 22px;
+    font-size: 1.3rem;
     font-weight: 400;
     text-align: center;
 }
@@ -137,7 +142,54 @@ nav button {
     border: none;
 }
 
+.hero-membership button i {
+    padding-left: 0.7rem;
+}
 .seprator-line{
     height: 8px;
     background-color: rgb(40, 39, 39);
+}
+
+/* =========================================== */
+/* first section */
+
+.first{
+    padding: 55px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.left-box{
+    color: white;
+}
+
+.left-box h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.left-box p {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.right-box {
+    position: relative;
+}
+
+.right-box img {
+    width:  472px;
+    height: 358px;
+}
+
+.right-box video {
+    position: absolute;
+    z-index: -1;
+    top: 42px;
+    right: 62px;
+    width: 345px;
+    height: 258px;
 }
