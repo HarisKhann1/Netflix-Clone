@@ -10,19 +10,20 @@
 .container{
     max-width: 75%;
     margin-inline: auto;
+    overflow: hidden;
 }
 
 body{
     background-color: black;
+    font-family: 'Martel Sans', sans-serif;
 }
 .main{
     background-image: url(assets/Images/bacground-Image.jpg);
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: max(1200px, 100vw);
+    /* background-size: max(1200px, 100vw); */
     position: relative;
-    font-family: 'Martel Sans', sans-serif;
 }
 
 .main .box {
@@ -47,6 +48,7 @@ nav img {
     width: 148px;
     position: relative;
     z-index: 1;
+    cursor: pointer;
 }
 
 nav button {
@@ -65,6 +67,7 @@ nav button {
     border: 1.5px solid rgba(255, 255, 255, 0.5); /* Semi-transparent border */
     color: rgba(255, 255, 255, 1); /* Fully opaque text */
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .btn-signin{
@@ -75,6 +78,7 @@ nav button {
     background-color: #e50914;
     border-radius: 5px;
     border: none;
+    cursor: pointer;
 }
 
 /* ================================================ */
@@ -89,6 +93,7 @@ nav button {
     color: white;
     transform: translateY(8%);
     position: relative;
+    overflow: hidden;
 }
 
 .hero-section> :first-child{
@@ -118,7 +123,7 @@ nav button {
 
 .hero-membership input{
     width: 364px;
-    height: 56px;
+    height: 3.5rem;
     padding-left: 15px;
     filter: opacity(80%);
     background-color: rgba(33, 32, 32, 0.3); /* White with 30% opacity */
@@ -131,8 +136,8 @@ nav button {
 
 
 .hero-membership button {
-    width: 213px;
-    height: 56px;
+    width: 13.3rem;
+    height: 3.5rem;
     background-color: #e50914;   
     color: white;
     text-align: center;
@@ -140,6 +145,7 @@ nav button {
     font-size: 20px;
     border-radius: 5px;
     border: none;
+    cursor: pointer;
 }
 
 .hero-membership button i {
@@ -159,21 +165,19 @@ nav button {
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-}
-
-.left-box{
     color: white;
 }
 
-.left-box h1 {
+h1 {
     font-size: 3rem;
     font-weight: 900;
 }
 
-.left-box p {
+p {
     margin-top: 15px;
     font-size: 1.5rem;
     font-weight: 400;
+    gap: 10px;
 }
 
 .right-box {
@@ -188,8 +192,133 @@ nav button {
 .right-box video {
     position: absolute;
     z-index: -1;
-    top: 42px;
+    top: 39px;
     right: 62px;
     width: 345px;
-    height: 258px;
+    height: 270px;
+}
+
+/* ========================================== */
+/* FAQ section */
+.faq {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: white;
+    padding: 3.5rem 0;
+}
+
+.faq h2 {
+    margin-bottom: 0.6rem;
+}
+.faqbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    background-color: #2d2d2d;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.faqbox:hover {
+    background-color: #595656;
+}
+
+/* ================================== */
+/* Get-Started section */
+
+.get-started {
+    color: white;
+}
+.get-started p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.action {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.action input{
+    width: 73%;
+    height: 3.3rem;
+    padding-left: 15px;
+    filter: opacity(80%);
+    background-color: rgba(33, 32, 32, 0.3); /* White with 30% opacity */
+    border: 1.5px solid rgba(255, 255, 255, 0.5); /* Semi-transparent border */
+    color: rgba(255, 255, 255, 1); /* Fully opaque text */
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.action button {
+    width: 13.3rem;
+    height: 3.3rem;
+    background-color: #e50914;   
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.action button i {
+    padding-left: 0.7rem;
+}
+
+/* ========================================= */
+/* Footer */
+
+footer{
+    padding: 30px 25px;
+    color: white;
+}
+
+a {
+    opacity: 70%;
+    color: white;
+}
+
+.links-wrapper{
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+.links-box{
+    display: flex;
+    align-items: self-start;
+    flex-direction: column;
+    row-gap: 1rem;
+    font-size: 0.8rem;
+}
+
+.footer-btn-language{
+    margin: 3.3rem 0;
+    height: 35px;
+    width: 130px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0); /* White with 30% opacity */
+    border: 1.5px solid rgba(255, 255, 255, 0.5); /* Semi-transparent border */
+    color: rgba(255, 255, 255, 1); /* Fully opaque text */
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+h6{
+    opacity: 70%;
+    font-size: 0.8rem;
 }
