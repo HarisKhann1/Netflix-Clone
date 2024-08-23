@@ -42,8 +42,30 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
+.languages{
+    max-height: 0;
+    overflow: hidden;
+}
+
+.languages-active{
+    display: block;
+    max-height: fit-content;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
+.language-option{
+    margin-top: 5px;
+    height: 20px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+}
 nav img {
     width: 148px;
     position: relative;
@@ -55,12 +77,13 @@ nav button {
     position: relative;
     z-index: 1;
     color: white;
-    background-color: #e50914;
 }
+
+
 
 .btn-language{
     height: 38px;
-    width: 76px;
+    width: 100px;
     font-size: 14px;
     font-weight: bold;
     background-color: rgba(255, 255, 255, 0); /* White with 30% opacity */
@@ -68,6 +91,13 @@ nav button {
     color: rgba(255, 255, 255, 1); /* Fully opaque text */
     margin-right: 10px;
     cursor: pointer;
+}
+.btn-language i {
+    margin-left: 1rem;
+}
+
+.icon-active {
+    transform: rotate(180deg);
 }
 
 .btn-signin{
@@ -210,22 +240,47 @@ p {
 
 .faq h2 {
     margin-bottom: 0.6rem;
+    font-weight: 700;
 }
 .faqbox {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 0.1rem;
     width: 90%;
-    background-color: #2d2d2d;
-    padding: 1.5rem;
     font-size: 1.5rem;
     cursor: pointer;
+    font-weight: 700;
+}
+
+.question i {
+    font-size: 2rem;
+}
+
+.question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background-color: #2d2d2d;
     transition: 0.5s ease;
 }
 
-.faqbox:hover {
+.question:hover {
     background-color: #595656;
 }
+
+.answer {
+    max-height: 0;
+    display: none;
+}
+
+.active{
+    display: block;
+    max-height: fit-content;
+    padding: 1.5rem;
+    background-color: #2d2d2d;
+}
+
 
 /* ================================== */
 /* Get-Started section */
